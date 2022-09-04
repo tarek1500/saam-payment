@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('payment', [PaymentController::class, 'index'])->name('payment.index');
+Route::post('checkout', [PaymentController::class, 'checkout'])->name('payment.checkout');

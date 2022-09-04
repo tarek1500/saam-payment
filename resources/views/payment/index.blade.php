@@ -121,5 +121,6 @@
 	</div>
 
 	<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('js/payment/index.js') }}"></script>
 </body>
 </html>
