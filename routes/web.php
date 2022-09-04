@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('payment', [PaymentController::class, 'index'])->name('payment.index');
 Route::post('checkout', [PaymentController::class, 'checkout'])->name('payment.checkout');
+Route::get('hyperpay/finalize', [PaymentController::class, 'finalize'])->name('payment.finalize');
+Route::get('complete', [PaymentController::class, 'complete'])->name('payment.complete');
