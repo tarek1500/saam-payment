@@ -1,0 +1,53 @@
+.logo img {
+	margin: 12px 0px 32px 0px;
+	max-width: 100%;
+	height: auto;
+}
+
+.content {
+	padding: 48px 0px;
+}
+
+.heading,
+.subheading,
+.form-label,
+.register .btn {
+	font-family: 'Roboto-Flex';
+	font-size: 16px;
+}
+
+.heading,
+.form-label {
+	color: #8E526C;
+}
+
+.subheading,
+.mandatory {
+	color: red;
+}
+
+.optional {
+	font-size: 14px;
+}
+
+.form-select,
+.form-control {
+	border-radius: 0px;
+	border-width: 1px;
+	border-color: #8E526C;
+}
+
+.form-text {
+	color: black;
+}
+
+.register {
+	margin-top: 64px;
+}
+
+.register .btn {
+	padding: 10px 0px;
+	border-radius: 0px;
+	border-color: #8E526C;
+	background-color: #8A4F6B;
+}
