@@ -51,3 +51,9 @@
 	border-color: #8E526C;
 	background-color: #8A4F6B;
 }
+
+@media (max-width: 767.98px) {
+	.payment-form {
+		margin-top: 32px;
+	}
+}
