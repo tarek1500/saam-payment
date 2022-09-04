@@ -6,6 +6,7 @@ use App\Http\Requests\CheckoutRequest;
 use App\Models\Country;
 use App\Models\Registration;
 use App\Models\User;
+use App\Notifications\PaymentCompletedNotification;
 use Devinweb\LaravelHyperpay\Facades\LaravelHyperpay;
 use Devinweb\LaravelHyperpay\Support\TransactionBuilder;
 use Illuminate\Http\Request;
@@ -98,6 +99,11 @@ class PaymentController extends Controller
 					'registration_type',
 					'payment_option'
 				]));
+
+				if ($user = $transaction->user)
+				{
+					$user->notify(new PaymentCompletedNotification);
+				}
 
 				return redirect()->route('payment.complete');
 			}
