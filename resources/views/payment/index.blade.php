@@ -46,11 +46,11 @@
 					</div>
 					<div class="mb-4">
 						<label for="first-name" class="form-label">First Name <span class="mandatory ms-2">*</span></label>
-						<input type="text" class="form-control" id="first-name" name="first_name" required value="Tarek">
+						<input type="text" class="form-control" id="first-name" name="first_name" required>
 					</div>
 					<div class="mb-4">
 						<label for="last-name" class="form-label">Last Name <span class="mandatory ms-2">*</span></label>
-						<input type="text" class="form-control" id="last-name" name="last_name" required value="Ibrahem">
+						<input type="text" class="form-control" id="last-name" name="last_name" required>
 					</div>
 					<div class="mb-4">
 						<label for="mobile-code" class="form-label">Mobile Number <span class="mandatory ms-2">*</span></label>
@@ -63,13 +63,13 @@
 								</select>
 							</div>
 							<div class="col-7 col-md-9">
-								<input type="text" class="form-control" id="mobile-number" name="mobile_number" required value="1113288865">
+								<input type="text" class="form-control" id="mobile-number" name="mobile_number" required>
 							</div>
 						</div>
 					</div>
 					<div class="mb-4">
 						<label for="email" class="form-label">Email <span class="mandatory ms-2">*</span></label>
-						<input type="email" class="form-control" id="email" name="email" required value="tarek_mohammed2@yahoo.com">
+						<input type="email" class="form-control" id="email" name="email" required>
 					</div>
 					<div class="mb-4">
 						<label for="scfhs" class="form-label">SCFHS No <span class="optional">(optional)</span></label>
