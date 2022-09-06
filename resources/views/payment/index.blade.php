@@ -63,7 +63,7 @@
 								</select>
 							</div>
 							<div class="col-7 col-md-9">
-								<input type="text" class="form-control" id="mobile-number" name="mobile_number" required>
+								<input type="number" class="form-control" id="mobile-number" name="mobile_number" required>
 							</div>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
 					</div>
 					<div class="mb-4">
 						<label for="post-code" class="form-label">Post Code <span class="optional">(optional)</span></label>
-						<input type="text" class="form-control" id="post-code" name="post_code">
+						<input type="number" class="form-control" id="post-code" name="post_code">
 					</div>
 					<div class="mb-4">
 						<label for="registration-type" class="form-label">Registration Type <span class="mandatory ms-2">*</span></label>

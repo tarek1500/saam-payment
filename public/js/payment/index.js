@@ -10,7 +10,10 @@
 
 		fetch(url, {
 			method,
-			body: formData
+			body: formData,
+			headers: {
+				'Accept': 'application/json'
+			}
 		})
 		.then(response => response.json())
 		.then(response => {
