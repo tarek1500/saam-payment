@@ -11,6 +11,7 @@ use Devinweb\LaravelHyperpay\Facades\LaravelHyperpay;
 use Devinweb\LaravelHyperpay\Support\TransactionBuilder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 
 class PaymentController extends Controller
 {
@@ -61,7 +62,9 @@ class PaymentController extends Controller
 		$amount = $data['registration_type'];
 		$brand = $data['payment_option'];
 
-		return LaravelHyperpay::checkout($data, $user, $amount, $brand, $request);
+		$merchantTransactionId = Str::random(40);
+
+		return LaravelHyperpay::addMerchantTransactionId($merchantTransactionId)->checkout($data, $user, $amount, $brand, $request);
 	}
 
 	/**
